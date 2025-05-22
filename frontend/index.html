@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microservicios Unificados</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎪 Servicios Integrados</h1>
+      </header>
+
+      <div class="services-grid">
+        <section class="service-card">
+          <h2>🤪 Consejos Absurdos</h2>
+          <div class="service-actions">
+            <button onclick="obtenerConsejo()">Obtener Consejo</button>
+            <div id="consejo-aleatorio" class="result-box"></div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="nuevo-consejo"
+              placeholder="Tu consejo absurdo..."
+            />
+            <button onclick="agregarConsejo()">Añadir</button>
+          </div>
+
+          <div class="advanced-actions">
+            <button onclick="mostrarTodosConsejos()">Ver Todos</button>
+            <div id="lista-consejos" class="result-box scrollable"></div>
+          </div>
+        </section>
+
+        <section class="service-card">
+          <h2>🔠 Traductor Invertido</h2>
+          <div class="form-group">
+            <input
+              type="text"
+              id="texto-a-invertir"
+              placeholder="Escribe algo..."
+            />
+            <button onclick="invertirTexto()">Invertir</button>
+          </div>
+          <div id="resultado-invertido" class="result-box"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
