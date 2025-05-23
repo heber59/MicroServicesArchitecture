@@ -8,6 +8,8 @@ Proyecto demo con dos microservicios independientes y un frontend unificado.
 
    - GET `/consejo`: Obtiene un consejo aleatorio.
    - POST `/consejo`: Añade un nuevo consejo.
+   - GET `/consejo`: Obtiene lista de consejos.
+   - DELETE `/consejo/{indice}`: Eliminar consejo.
 
 2. **Servicio Invertidor de Texto** (Puerto 8001)
    - GET `/invertir?texto=...`: Invierte cualquier texto.
