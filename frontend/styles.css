@@ -99,6 +99,9 @@ button:hover {
 .advanced-actions {
   margin-top: 1.5rem;
 }
+.consejo-texto {
+  border-radius: 2rem !important;
+}
 
 .result-box {
   background-color: var(--light);
