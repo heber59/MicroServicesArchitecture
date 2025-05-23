@@ -45,9 +45,8 @@ async function mostrarTodosConsejos() {
       const item = document.createElement("div");
       item.className = "consejo-item";
       item.innerHTML = `
-                <span class="consejo-indice">${indice}.</span>
                 <span class="consejo-texto">${consejo}</span>
-                <button onclick="eliminarConsejo(${indice})" class="btn-eliminar">eliminar</button>
+                <button onclick="eliminarConsejo(${indice})" >eliminar</button>
             `;
       lista.appendChild(item);
     }
